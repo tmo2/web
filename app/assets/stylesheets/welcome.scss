@@ -1,0 +1,20 @@
+.welcome {
+  max-width: 1000px;
+  margin: 0 auto;
+  h1 {
+
+  }
+  .category {
+    width: 100%;
+    h2 {
+
+    }
+    .cell {
+      width: 30%;
+      display: inline-block;
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}

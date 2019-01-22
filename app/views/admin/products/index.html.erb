@@ -1,0 +1,32 @@
+<%= form_tag admin_products_path, method: :post do %>
+  <%= label_tag :maker_id, "メーカーid" %>
+  <%= text_field :product, :maker_id, class: "form-control" %>
+  <br>
+  <%= label_tag :name, "商品名" %>
+  <%= text_field :product, :name, class: "form-control" %>
+  <br>
+  <%= label_tag :price, "価格" %>
+  <%= text_field :product, :price, class: "form-control" %>
+  <br>
+  <%= label_tag :description, "詳細" %>
+  <%= text_field :product, :description, class: "form-control" %>
+  <br>
+  <%= submit_tag "作成する", class: "btn btn-info" %>
+<% end %>
+
+<div class="products">
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>メーカー名</th>
+        <th>商品名</th>
+        <th>価格</th>
+        <th>詳細</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @categories %>
+    </tbody>
+  </table>
+</div>
