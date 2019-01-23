@@ -8,6 +8,10 @@ Rails.application.routes.draw do
     root to: "products#index"
     resource :products
   end
+
+  namespace :landing do
+    resources :demo, only: [:index]
+  end
   # Example resource route with options:
   #   resources :products do
   #     member do

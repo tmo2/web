@@ -1,0 +1,25 @@
+@import "loader";
+
+body#landing {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+  }
+  .button {
+    color: white;
+    background: $theme;
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .align-center {
+    display: block;
+   margin: 0 auto;
+   text-align: center;
+   width: fit-content;
+  }
+}
