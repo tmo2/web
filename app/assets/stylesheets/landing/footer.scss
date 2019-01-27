@@ -1,0 +1,45 @@
+@import "loader";
+
+.landing-footer {
+  background: $theme;
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 10px;
+    height: 160px;
+    position: relative;
+    color: white;
+    p {
+      margin: 1em 0 0;
+    }
+  }
+  .footer-high {
+    display: flex;
+    justify-content: space-between;
+    img.logo {
+      height: 60px;
+      margin: 15px 0;
+      flex-basis: auto;
+    }
+    .footer-contact {
+      flex-basis: calc(100% - 440px);
+      a {
+        font-size: 18px;
+
+      }
+    }
+    .footer-line {
+      width: 160px;
+      a {
+        img {
+          width: 160px;
+        }
+      }
+    }
+  }
+  .footer-copyright {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

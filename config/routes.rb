@@ -10,7 +10,11 @@ Rails.application.routes.draw do
   end
 
   namespace :landing do
-    resources :demo, only: [:index]
+    resources :demo, only: [:index] do
+      collection do
+        get :apply
+      end
+    end
   end
   # Example resource route with options:
   #   resources :products do
