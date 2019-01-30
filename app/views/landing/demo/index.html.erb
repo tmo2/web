@@ -162,7 +162,7 @@
           <li>④指定日の前日から、担当スタッフと連絡を取り、頼みたいことを伝えられます。</li>
         </ul>
         <br>
-        <%= link_to "体験版に申し込む", apply_landing_demo_index_path, class: "button apply-button" %>
+        <%= link_to "体験版に申し込む >", apply_landing_demo_index_path, class: "button apply-button" %>
       </div>
       <div class="right">
         <%= image_tag "message.jpg" %>
@@ -177,5 +177,17 @@
 
 
 <script type="text/javascript">
-  $.scrollify({section:".section"});
+  $(document).on('turbolinks:load', function() {
+
+    if ($(".section").length) { // そのページにboxクラスの要素が存在するならscrollifyを有効にする
+      $.scrollify.enable();
+      $.scrollify({
+        section: ".section",
+        // 各設定
+      });
+
+    } else { // 存在しないなら無効化する
+      $.scrollify.disable();
+    }
+  });
 </script>
