@@ -1,0 +1,21 @@
+@import "loader";
+
+.landing-header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  .landing-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-bottom: 1px solid $theme;
+    height: 60px;
+    a.header-logo {
+      img {
+        margin-left: 20px;
+        height: 60px;
+      }
+    }
+  }
+}

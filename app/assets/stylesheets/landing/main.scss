@@ -1,6 +1,7 @@
 @import "loader";
 
 body#landing {
+  position: relative;
   .container {
     max-width: 1000px;
     margin: 0 auto 60px;

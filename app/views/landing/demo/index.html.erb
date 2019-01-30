@@ -1,67 +1,64 @@
 <div id="demo-index" class="container">
-  <%= image_tag "image.jpg", class: "top-image" %>
-
-  <br>
-
-  <%= link_to "体験版に申し込む", "", class: "button align-center apply-button" %>
 
   <div class="section tasucaru-service">
-    <h2>tasucaruとは</h2>
-    <div class="service">
-      tasucaruはちょっとした手助けが必要なシニアと大学生のサポーターを繋げるサービスです。
+    <div class="left">
+      <h2>
+        tasucaruで
+        <br>
+        充実した新しい毎日を
+      </h2>
+      <div class="service explain">
+        tasucaruはちょっとした手助けが必要なシニアと大学生のサポーターを繋げるサービスです。
+        <br>
+        掃除、日用品や食料品の買い物、電子機器の操作などの日常の悩み事を解決するため、
+        <br>
+        毎週大学生が自宅にお伺いして、サポートを行います。
+      </div>
       <br>
-      やりたいけどなかなかできない掃除や片付けをやってほしい。
-      <br>
-      日用品や食料品の補充をお願いしたい。
-      <br>
-      電子機器の操作を教えてほしい。
-      <br>
-      tasukaruではこんなシニアの方のお宅に、毎週大学生がお伺いして、サポートを行います。
+      <%= link_to "体験版に申し込む >", apply_landing_demo_index_path, class: "button apply-button" %>
+    </div>
+    <div class="right">
+      <%= image_tag "kind.png" %>
     </div>
   </div>
 
-  <div class="section tasucaru-points">
-    <h2>tasucaruの3つの特徴</h2>
-    <div class="points">
-      <div class="point">
-        <div class="point-image">
-          <%= image_tag "worker.jpg" %>
-        </div>
-        <div class="small-title">
-          独自基準を満たしたスタッフ
-        </div>
-        <div class="explanation">
-          都内の有名大学に通う大学生の中から、独自の基準で選んだ信頼できるサポーターがお伺いします。
-        </div>
+  <div class="section tasucaru-staff">
+    <div class="left">
+      <h2>明るく信頼できるtasucrew</h2>
+      <div class="explain">
+        tasucaruでは、自宅に伺うスタッフのことを、tasucrew(タスクルー)と呼んでいます。
+        都内の有名大学に通う大学生の中から、独自の基準で選んだ、明るく信頼できるスタッフです。
       </div>
-      <div class="point">
-        <div class="point-image">
-          <%= image_tag "message.png" %>
-        </div>
-        <div class="small-title">
-          メッセージで気軽に依頼
-        </div>
-        <div class="explanation">
-          メッセージで事前に頼みたいことを伝えられます。電話でも対応しています。
-        </div>
+    </div>
+    <div class="right">
+      <%= image_tag "worker.jpg" %>
+    </div>
+  </div>
+
+  <div class="section tasucaru-staff">
+    <div class="left">
+      <h2>メッセージで気軽に依頼</h2>
+      <div class="explain">
+        依頼したい内容は、LINE、もしくは電話で連絡することができます。
+        自分の使い慣れた方法で、tasucrewに連絡をとってください。
       </div>
-      <div class="point">
-        <div class="point-image">
-          <%= image_tag "kind.png" %>
-        </div>
-        <div class="small-title">
-          定期的なコミュニケーション
-        </div>
-        <div class="explanation">
-          毎週決まった曜日、時間に若い学生がやってきて話す機会は、日常の刺激になります。
-        </div>
-      </div>
+    </div>
+    <div class="right">
+      <%= image_tag "message.png" %>
     </div>
   </div>
 
   <div class="section tasucaru-example">
-    <h2>tasucaruで頼めること</h2>
-    <div class="examples">
+    <div class="left">
+      <h2>
+        日常の困りごとならなんでも依頼可能
+      </h2>
+      <div class="explain">
+        日常生活で困ったことはtasucrewになんでも依頼できます。
+        右にあるような困りごとはありませんか？
+      </div>
+    </div>
+    <div class="right">
       <div class="example">
         <%= image_tag "kaimono.jpg" %>
         <div class="explanation">
@@ -96,61 +93,90 @@
   </div>
 
   <div class="section tasucaru-price">
-    <h2>料金</h2>
-    <table class="table table-bordered .table-striped">
-      <thead>
-        <tr>
-          <th>週の訪問回数</th>
-          <th>時間</th>
-          <th>料金(月額)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1回</td>
-          <td>1時間半</td>
-          <td>1万円</td>
-        </tr>
-        <tr>
-          <td>2回</td>
-          <td>1時間半</td>
-          <td>2万円</td>
-        </tr>
-        <tr>
-          <td>3回</td>
-          <td>1時間半</td>
-          <td>3万円</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="explanation">
-      ※お支払いは銀行振込で承っております。
+    <div class="left">
+      <h2>料金</h2>
+      <div class="explain">
+        日常生活で困ったことはtasucrewになんでも依頼できます。
+        右にあるような困りごとはありませんか？
+      </div>
+    </div>
+    <div class="right">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>週の訪問回数</th>
+            <th>時間</th>
+            <th>料金(月額)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1回</td>
+            <td>1時間半</td>
+            <td>1万円</td>
+          </tr>
+          <tr>
+            <td>2回</td>
+            <td>1時間半</td>
+            <td>2万円</td>
+          </tr>
+          <tr>
+            <td>3回</td>
+            <td>1時間半</td>
+            <td>3万円</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="explanation">
+        ※お支払いは銀行振込で承っております。
+      </div>
     </div>
   </div>
 
   <div class="section tasucaru-place">
-    <h2>提供地区</h2>
-    <%= image_tag "tokyo.png" %>
-    <div class="explanation">
-      以上の地域で現在ご利用いただけます。対象地域は拡大中です。
+    <div class="left">
+      <h2>提供地区</h2>
+      <div class="explain">
+        現在、以下の地域でご利用いただけます。対象地域は拡大中です。
+      </div>
+      <div class="place">
+        東京都千代田区
+        <br>
+        東京都文京区
+        <br>
+        東京都新宿区
+      </div>
     </div>
-    <div class="place">
-      東京都千代田区
-      <br>
-      東京都文京区
-      <br>
-      東京都新宿区
+    <div class="right">
+      <%= image_tag "tokyo.png" %>
     </div>
   </div>
 
   <div class="section tasucaru-flow">
-    <h2>利用の流れ</h2>
-    <ul>
-      <li>①LINE@に登録</li>
-      <li>②質問に沿って、希望する回数、曜日の候補選択</li>
-      <li>③決定した内容が通知されます</li>
-      <li>④指定日の前日から、担当スタッフと連絡を取り、頼みたいことを伝えられます。</li>
-    </ul>
+    <div class="flex">
+      <div class="left">
+        <h2>利用の流れ</h2>
+        <ul>
+          <li>①LINE@に登録</li>
+          <li>②質問に沿って、希望する回数、曜日の候補選択</li>
+          <li>③決定した内容が通知されます</li>
+          <li>④指定日の前日から、担当スタッフと連絡を取り、頼みたいことを伝えられます。</li>
+        </ul>
+        <br>
+        <%= link_to "体験版に申し込む", apply_landing_demo_index_path, class: "button apply-button" %>
+      </div>
+      <div class="right">
+        <%= image_tag "message.jpg" %>
+      </div>
+    </div>
+    <%= render 'landing/shared/footer' %>
   </div>
-  <%= link_to "体験版に申し込む", "", class: "button align-center apply-button" %>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+
+
+<script type="text/javascript">
+  $.scrollify({section:".section"});
+</script>

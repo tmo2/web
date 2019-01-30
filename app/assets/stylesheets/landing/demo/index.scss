@@ -12,11 +12,29 @@
 
    .section {
      margin-bottom: 36px;
+     padding: 120px 0 200px;
+     display: flex;
      h2 {
-        text-decoration: underline;
         color: $theme;
+        margin: 0 0 16px 0;
+        font-size: 40px;
      }
-
+     .left, .right {
+       width: 50%;
+       padding: 20px;
+       img {
+         width: 100%;
+       }
+     }
+     .explain {
+       font-size: 20px;
+       line-height: 170%;
+     }
+   }
+   .tasucaru-service {
+     .service {
+       margin-bottom: 12px;
+     }
    }
    .tasucaru-points {
      .points {
@@ -58,11 +76,12 @@
      }
    }
    .tasucaru-example {
-     .examples {
+     .right {
        display: flex;
+       flex-wrap: wrap;
        justify-content: space-between;
        .example {
-         width: 18%;
+         width: 30%;
          margin: 0 1%;
          img {
            width: 100%;
@@ -81,6 +100,7 @@
        width: 100%;
        font-size: 16px;
        text-align: center;
+       margin-top: 63px;
      }
      .explanation {
        margin-top: 8px;
@@ -97,15 +117,29 @@
      }
      .place {
        font-weight: bold;
+       margin-top: 24px;
      }
      .explanation {
        font-size: 16px;
      }
    }
    .tasucaru-flow {
+     display: block;
+     padding-bottom: 0;
+     margin-bottom: 0;
+     .flex {
+       display: flex;
+     }
      ul {
        list-style: none;
        padding-left: 0;
+       margin-bottom: 16px;
+     }
+     .right {
+       img {
+         height: 500px;
+         object-fit: contain;
+       }
      }
    }
  }

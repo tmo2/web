@@ -4,8 +4,9 @@
   background: $theme;
   .footer-content {
     max-width: 1000px;
-    margin: 0 10px;
-    height: 160px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 120px;
     position: relative;
     color: white;
     p {
@@ -15,20 +16,38 @@
   .footer-high {
     display: flex;
     justify-content: space-between;
-    img.logo {
-      height: 60px;
-      margin: 15px 0;
-      flex-basis: auto;
+    a.footer-logo {
+      img.logo {
+        height: 60px;
+        margin: 0;
+        flex-basis: auto;
+      }
     }
-    .footer-contact {
+    ul.footer-list {
+      display: flex;
       flex-basis: calc(100% - 440px);
-      a {
-        font-size: 18px;
-
+      list-style: none;
+      margin-top: 20px;
+      li {
+        line-height: 16px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+      span.bar {
+        margin: 0 10px;
+        border-left: 1px solid white;
+        height: 16px;
       }
     }
     .footer-line {
       width: 160px;
+      margin-top: 20px;
+      p {
+        margin: 0 0 6px;
+        line-height: 16px;
+      }
       a {
         img {
           width: 160px;
@@ -39,7 +58,7 @@
   .footer-copyright {
     font-size: 12px;
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 0;
   }
 }
