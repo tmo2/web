@@ -11,9 +11,10 @@
    }
 
    .section {
-     margin-bottom: 36px;
      padding: 120px 0 200px;
      display: flex;
+     max-width: 1000px;
+     margin: 0 auto 36px;
      h2 {
         color: $theme;
         margin: 0 0 16px 0;
@@ -127,8 +128,11 @@
      display: block;
      padding-bottom: 0;
      margin-bottom: 0;
+     max-width: none;
      .flex {
        display: flex;
+       max-width: 1000px;
+       margin: 0 auto;
      }
      ul {
        list-style: none;
