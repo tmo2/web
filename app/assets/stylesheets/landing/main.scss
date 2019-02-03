@@ -3,7 +3,7 @@
 body#landing {
   position: relative;
   .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto 60px;
   }
   .button {
@@ -14,7 +14,7 @@ body#landing {
     border-radius: 6px;
     text-decoration: none;
     &:hover {
-      opacity: 0.8;
+      background: lighten($theme, 6%);
     }
   }
   .align-center {

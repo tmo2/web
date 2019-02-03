@@ -1,188 +1,100 @@
 <div id="demo-index" class="">
-  <div class="section tasucaru-service">
-    <div class="left">
-      <h2>
-        tasucaruで
-        <br>
-        充実した新しい毎日を
-      </h2>
-      <div class="service explain">
-        tasucaruはちょっとした手助けが必要なシニアと大学生のサポーターを繋げるサービスです。
-        <br>
-        掃除、日用品や食料品の買い物、電子機器の操作などの日常の悩み事を解決するため、
-        <br>
-        毎週大学生が自宅にお伺いして、サポートを行います。
-      </div>
+  <div class="index-header">
+    <h1>
+      シニアと若者をつなぐ
+    </h1>
+    <div class="header-explain">
+      tasucaruはちょっとした手助けが必要なシニアと大学生のサポーターを繋げるサービスです。
       <br>
-      <%= link_to "体験版に申し込む >", apply_landing_demo_index_path, class: "button apply-button" %>
+      掃除、日用品や食料品の買い物、電子機器の操作方法などの日常の悩み事を解決するため、
+      <br>
+      毎週大学生が自宅にお伺いして、サポートを行います。
     </div>
-    <div class="right">
-      <%= image_tag "kind.png" %>
+    <div class="header-apply">
+      <%= link_to "体験版に申し込む", apply_landing_demo_index_path, class: "button apply-button header-apply-btn" %>
+    </div>
+  </div>
+
+  <div class="section tasucaru-points">
+    <div class="point">
+      <div class="point-explain">
+        <h2 class="point-title">家事のお手伝い</h2>
+        <div class="point-message">
+          高いところの掃除や、車の必要な買い出しなど、自分でするのはちょっと大変な家事を手伝ってもらったり
+        </div>
+      </div>
+      <div class="point-img">
+        <%= image_tag "point1.png" %>
+      </div>
+    </div>
+    <div class="point">
+      <div class="point-img">
+        <%= image_tag "point2.png" %>
+      </div>
+      <div class="point-explain">
+        <h2 class="point-title">電子機器のサポート</h2>
+        <div class="point-message">
+          最近買ったスマホやパソコンなどの電子機器の使い方を教えてもらったり
+        </div>
+      </div>
+    </div>
+    <div class="point">
+      <div class="point-explain">
+        <h2 class="point-title">日常の話相手</h2>
+        <div class="point-message">
+          退屈な1日のちょっとした話し相手になってもらったり、Tasucaruの使い方は様々です。
+        </div>
+      </div>
+      <div class="point-img">
+        <%= image_tag "point3.png" %>
+      </div>
     </div>
   </div>
 
   <div class="section tasucaru-staff">
-    <div class="left">
-      <h2>明るく信頼できるtasucrew</h2>
-      <div class="explain">
-        tasucaruでは、自宅に伺うスタッフのことを、tasucrew(タスクルー)と呼んでいます。
-        都内の有名大学に通う大学生の中から、独自の基準で選んだ、明るく信頼できるスタッフです。
+    <div class="staff-title">
+      <div class="icon">
+        <%= image_tag "human-icon.png" %>
+      </div>
+      <h2>Tascrew(タスクルー)</h2>
+    </div>
+    <div class="staff-message">
+      <div class="small-text">
+        お手伝いするのは大学生の
+      </div>
+      <div class="big-text">
+        <span>タスクルー</span>
+        Tascrew
       </div>
     </div>
-    <div class="right">
-      <%= image_tag "worker.jpg" %>
-    </div>
-  </div>
-
-  <div class="section tasucaru-staff">
-    <div class="left">
-      <h2>メッセージで気軽に依頼</h2>
-      <div class="explain">
-        依頼したい内容は、LINE、もしくは電話で連絡することができます。
-        自分の使い慣れた方法で、tasucrewに連絡をとってください。
-      </div>
-    </div>
-    <div class="right">
-      <%= image_tag "message.png" %>
-    </div>
-  </div>
-
-  <div class="section tasucaru-example">
-    <div class="left">
-      <h2>
-        日常の困りごとならなんでも依頼可能
-      </h2>
-      <div class="explain">
-        日常生活で困ったことはtasucrewになんでも依頼できます。
-        右にあるような困りごとはありませんか？
-      </div>
-    </div>
-    <div class="right">
-      <div class="example">
-        <%= image_tag "kaimono.jpg" %>
-        <div class="explanation">
-          買い物
+    <div class="staff-points">
+      <div class="point">
+        <%= image_tag "staff1.png" %>
+        <div class="point-title">
+          明るく元気
+        </div>
+        <div class="point-message">
+          話していて元気になる学生ばかり
         </div>
       </div>
-      <div class="example">
-        <%= image_tag "gaishutu.jpg" %>
-        <div class="explanation">
-          外出の付き添い
+      <div class="point">
+        <%= image_tag "staff2.png" %>
+        <div class="point-title">
+          有名大学の学生
+        </div>
+        <div class="point-message">
+          都内有名大学の学生なので、安心安全
         </div>
       </div>
-      <div class="example">
-        <%= image_tag "denshikiki.jpg" %>
-        <div class="explanation">
-          電子機器の取り扱い
+      <div class="point">
+        <%= image_tag "staff3.png" %>
+        <div class="point-title">
+          信頼できる
         </div>
-      </div>
-      <div class="example">
-        <%= image_tag "souji.jpg" %>
-        <div class="explanation">
-          掃除
-        </div>
-      </div>
-      <div class="example">
-        <%= image_tag "niwa.jpg" %>
-        <div class="explanation">
-          庭の手入れ
+        <div class="point-message">
+          面接を経ているので、新rないできる学生ばかり
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="section tasucaru-price">
-    <div class="left">
-      <h2>料金</h2>
-      <div class="explain">
-        tasucaruは定額制で、料金によってtascrewの訪問回数を増やすことができます。
-        自分の生活にあったプランをお選びください。
-      </div>
-    </div>
-    <div class="right">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>週の訪問回数</th>
-            <th>時間</th>
-            <th>料金(月額)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1回</td>
-            <td>1時間半</td>
-            <td>1万円</td>
-          </tr>
-          <tr>
-            <td>2回</td>
-            <td>1時間半</td>
-            <td>2万円</td>
-          </tr>
-          <tr>
-            <td>3回</td>
-            <td>1時間半</td>
-            <td>3万円</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="explanation">
-        ※お支払いは銀行振込で承っております。
-      </div>
-    </div>
-  </div>
-
-  <div class="section tasucaru-place">
-    <div class="left">
-      <h2>提供地区</h2>
-      <div class="explain">
-        現在、以下の地域でご利用いただけます。対象地域は拡大中です。
-      </div>
-      <div class="place">
-        東京都千代田区
-        <br>
-        東京都文京区
-        <br>
-        東京都新宿区
-      </div>
-    </div>
-    <div class="right">
-      <%= image_tag "tokyo.png" %>
-    </div>
-  </div>
-
-  <div class="section tasucaru-flow">
-    <div class="flex">
-      <div class="left">
-        <h2>利用の流れ</h2>
-        <ul>
-          <li>①LINE@に登録</li>
-          <li>②質問に沿って、希望する回数、曜日の候補選択</li>
-          <li>③決定した内容が通知されます</li>
-          <li>④指定日の前日から、担当スタッフと連絡を取り、頼みたいことを伝えられます。</li>
-        </ul>
-        <br>
-        <%= link_to "体験版に申し込む >", apply_landing_demo_index_path, class: "button apply-button" %>
-      </div>
-      <div class="right">
-        <%= image_tag "message.jpg" %>
-      </div>
-    </div>
-    <%= render 'landing/shared/footer' %>
   </div>
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
-
-
-<script type="text/javascript">
-$(document).on('turbolinks:load', function() {
-  if ($(".section").length) { // そのページにboxクラスの要素が存在するならscrollifyを有効にする
-    $.scrollify.enable();
-    $.scrollify({section:".section"});
-  } else { // 存在しないなら無効化する
-    $.scrollify.disable();
-  }
-});
-</script>

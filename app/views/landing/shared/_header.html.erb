@@ -1,7 +1,12 @@
 <div class="landing-header">
   <div class="landing-content">
     <%= link_to landing_demo_index_path, class: "header-logo" do %>
-    <%= image_tag 'logo-white.png', class: "logo" %>
+      <%= image_tag 'logo-white.png', class: "logo" %>
     <% end %>
+    <div class="header-links">
+      <%= link_to "大学生の方へ", landing_demo_index_path, class: "header-link" %>
+      <span></span>
+      <%= link_to "シニアの方へ", landing_demo_index_path, class: "header-link" %>
+    </div>
   </div>
 </div>

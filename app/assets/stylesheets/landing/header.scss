@@ -1,20 +1,33 @@
 @import "loader";
 
 .landing-header {
-  position: fixed;
-  top: 0;
-  height: 60px;
+  height: 121px;
   width: 100%;
+  background: white;
   .landing-content {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     background: white;
-    border-bottom: 1px solid $theme;
-    height: 60px;
+    display: flex;
+    justify-content: space-between;
     a.header-logo {
+      height: 121px;
       img {
-        margin-left: 20px;
+        margin: 30px 20px;
         height: 60px;
+      }
+    }
+    .header-links {
+      display: flex;
+      font-size: 24px;
+      line-height: 24px;
+      margin: 48px 83px 48px 0;
+      a.header-link {
+
+      }
+      span {
+        margin: 0 30px;
+        border-left: 2px solid black;
       }
     }
   }
