@@ -8,13 +8,13 @@ body#landing {
   }
   .button {
     color: white;
-    background: $theme;
+    background: $theme2;
     font-size: 16px;
     padding: 14px;
     border-radius: 6px;
     text-decoration: none;
     &:hover {
-      background: lighten($theme, 6%);
+      background: lighten($theme2, 6%);
     }
   }
   .align-center {

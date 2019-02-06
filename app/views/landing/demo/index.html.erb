@@ -56,15 +56,19 @@
       <div class="icon">
         <%= image_tag "human-icon.png" %>
       </div>
-      <h2>Tascrew(タスクルー)</h2>
+      <h2>Tascrew (タスクルー)</h2>
     </div>
     <div class="staff-message">
       <div class="small-text">
-        お手伝いするのは大学生の
+        <div>
+          お手伝いするのは大学生の
+        </div>
       </div>
-      <div class="big-text">
-        <span>タスクルー</span>
-        Tascrew
+      <div class="large-text">
+        <div class="content">
+          <span>タスクルー</span>
+          <div>Tascrew</div>
+        </div>
       </div>
     </div>
     <div class="staff-points">
@@ -92,9 +96,59 @@
           信頼できる
         </div>
         <div class="point-message">
-          面接を経ているので、新rないできる学生ばかり
+          面接を経ているので、信頼できる学生ばかり
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="section tasucaru-flow">
+    <div class="flow-title">
+      <h2>ご利用の流れ</h2>
+    </div>
+    <div class="flow-steps">
+      <div class="step step1">
+        <div class="step-title">
+          Step.1
+        </div>
+        <div class="step-img">
+          <%= image_tag "line-message.jpg" %>
+        </div>
+        <div class="step-message">
+          line@で日時と内容を送信
+        </div>
+      </div>
+      <div class="step step2">
+        <div class="step-title">
+          Step.2
+        </div>
+        <div class="step-img">
+          <%= image_tag "line-message.jpg" %>
+        </div>
+        <div class="step-message">
+          Tascrewと直接連絡
+        </div>
+      </div>
+      <div class="step step3">
+        <div class="step-title">
+          Step.3
+        </div>
+        <div class="step-img">
+          <%= image_tag "help.png" %>
+        </div>
+        <div class="step-message">
+          お手伝い当日
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tasucaru-apply">
+    <div class="apply-message">
+      ＼　今すぐ使ってみる　／
+    </div>
+    <div class="button-area">
+      <%= link_to "体験版に申し込む", apply_landing_demo_index_path, class: "button apply-button header-apply-btn" %>
     </div>
   </div>
 </div>

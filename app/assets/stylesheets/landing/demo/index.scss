@@ -1,6 +1,7 @@
 @import "loader";
 
  #demo-index {
+   margin-bottom: 95px;
    .top-image {
      width: 100%;
      margin-bottom: 12px;
@@ -11,9 +12,8 @@
    }
 
    .section {
-     padding: 120px 20px 200px;
      max-width: 1200px;
-     margin: 0 auto 36px;
+     margin: 120px auto 36px;
      h2 {
         margin: 0 0 16px 0;
         font-size: 40px;
@@ -85,7 +85,7 @@
      }
    }
    .tasucaru-points {
-     color: #4A4A4A;
+     color: $dark;
      .point {
        display: flex;
        justify-content: space-around;
@@ -111,84 +111,170 @@
        }
      }
    }
-   .tasucaru-example {
-     background-color: $theme;
+   .tasucaru-staff {
+     background: $theme2;
      color: white;
-     h2 {
-       color: white;
-     }
-     .example-content {
-       .explain {
-         margin-bottom: 24px;
+     .staff-title {
+       display: flex;
+       padding-left: 20px;
+       margin-bottom: 40px;
+       .icon {
+         background: white;
+         border-radius: 0 0 12px 0;
+         width: 130px;
+         height: 130px;
+         img {
+           margin: 22px;
+           width: 86px;
+           height: 86px;
+           object-fit: contain;
+         }
        }
-       .examples {
-         display: flex;
-         flex-wrap: wrap;
-         .example {
-           width: 25%;
-           margin: 0 2% 24px;
-           img {
-             width: 100%;
-             height: 240px;
-             object-fit: cover;
-             border-radius: 5px;
+       h2 {
+         font-size: 56px;
+         margin-left: 40px;
+         line-height: 130px;
+       }
+     }
+     .staff-message {
+       display: flex;
+       justify-content: center;
+       height: 68px;
+       margin-bottom: 56px;
+       .small-text {
+         display: inline;
+         height: 68px;
+         div {
+           font-size: 36px;
+           line-height: 48px;
+           padding-top: 20px;
+           display: flex;
+           align-items: flex-end;
+         }
+       }
+       .large-text {
+         display: inline;
+         text-align: center;
+         height: 68px;
+         margin-left: 12px;
+         .content {
+           display: flex;
+           flex-direction: column;
+           span {
+             font-size: 18px;
+             line-height: 18px;
+             margin-bottom: 2px;
            }
-           .explanation {
-             text-align: center;
+           div {
+             font-size: 48px;
+             line-height: 48px;
              font-weight: bold;
            }
          }
        }
      }
-   }
-   .tasucaru-price {
-     table {
-       width: 100%;
-       font-size: 16px;
-       text-align: center;
-       margin-top: 63px;
-     }
-     .explanation {
-       margin-top: 8px;
-       font-size: 14px;
-     }
-   }
-   .tasucaru-place {
-     img {
-       width: 70%;
-       object-fit: cover;
-       object-position: center;
-       display: block;
+     .staff-points {
+       display: flex;
+       justify-content: space-between;
        margin: 0 auto;
-     }
-     .place {
-       font-weight: bold;
-       margin-top: 24px;
-     }
-     .explanation {
-       font-size: 16px;
+       padding: 0 128px 135px;
+       .point {
+         width: 25%;
+         min-width: 260px;
+         img {
+           width: 100%;
+           height: 293px;
+           object-fit: contain;
+           margin-bottom: 25px;
+         }
+         .point-title {
+           font-size: 36px;
+           font-weight: bold;
+           text-align: center;
+         }
+         .point-message {
+           font-size: 22px;
+           line-height: 1.6em;
+           text-align: center;
+           letter-spacing: 2px;
+         }
+       }
      }
    }
    .tasucaru-flow {
-     display: block;
-     padding-bottom: 0;
-     margin-bottom: 0;
-     max-width: none;
-     .flex {
+     .flow-title {
+       text-align: center;
+       margin-bottom: 72px;
+       h2 {
+         font-size: 56px;
+         line-height: 56px;
+         text-align: center;
+         padding: 20px;
+         color: $dark;
+         border-bottom: 2px solid $dark;
+         display: inline-block;
+         margin: 0 auto;
+       }
+     }
+     .flow-steps {
        display: flex;
-       max-width: 1200px;
-       margin: 0 auto;
+       .step {
+         width: 40%;
+         height: 482px;
+         padding: 20px 90px 34px 20px;
+         background-repeat: no-repeat;
+         background-size: 100% 100%;
+         color: $dark;
+         .step-title {
+           font-size: 42px;
+           color: $theme;
+           font-weight: bold;
+           margin-bottom: 36px;
+         }
+         .step-img {
+           width: 100%;
+           margin-bottom: 24px;
+           img {
+             width: 100%;
+             height: 287px;
+             object-fit: cover;
+             object-position: bottom;
+           }
+         }
+         .step-message {
+           font-size: 24px;
+           text-align: center;
+         }
+       }
+       .step1 {
+         background-image: asset-url('fill1.png');
+         font-size: 38px;
+       }
+       .step2 {
+         background-image: asset-url('fill2.png');
+         padding-left: 90px;
+       }
+       .step3 {
+         background-image: asset-url('fill3.png');
+         padding-left: 90px;
+       }
      }
-     ul {
-       list-style: none;
-       padding-left: 0;
-       margin-bottom: 16px;
-       font-size: 20px;
+   }
+   .tasucaru-apply {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     .apply-message {
+       font-size: 36px;
+       color: $dark;
+       margin-bottom: 28px;
      }
-     .right {
-       img {
-         height: 500px;
-         object-fit: contain;
+     .button-area {
+       height: 84px;
+       .apply-button {
+         font-size: 36px;
+         height: 84px;
+         padding: 24px 36px;
        }
      }
    }
