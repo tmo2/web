@@ -1,29 +1,42 @@
 <div class="landing-footer">
   <div class="footer-content">
     <div class="footer-high">
-      <%= link_to landing_demo_index_path, class: "footer-logo" do %>
-        <%= image_tag 'logo-theme.png', class: "logo" %>
-      <% end %>
       <ul class="footer-list">
         <li>
-          <%= link_to "運営企業", "" %>
+          <%= link_to "Tasucaruとは", "" %>
         </li>
-        <span class="bar"></span>
         <li>
-          <%= link_to "利用規約", "" %>
+          <%= link_to "大学生の方へ", "" %>
         </li>
-        <span class="bar"></span>
+        <li>
+          <%= link_to "シニアの方へ", "" %>
+        </li>
+        <li>
+          <%= link_to "Q&A", "" %>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <%= link_to "運営会社概要", "" %>
+        </li>
         <li>
           <%= link_to "プライバシーポリシー", "" %>
         </li>
-        <span class="bar"></span>
+        <li>
+          <%= link_to "利用規約", "" %>
+        </li>
         <li>
           <%= link_to "お問い合わせ", "" %>
         </li>
       </ul>
       <div class="footer-line">
-        <p>申し込みはこちらから</p>
-        <a href="https://line.me/R/ti/p/%40gob8789o"><img border="0" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
+        <div class="line-link">
+          <p>申し込みはこちらから</p>
+          <a href="https://line.me/R/ti/p/%40gob8789o"><img border="0" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
+        </div>
+        <div class="footer-logo">
+          <%= image_tag "logo-white.png" %>
+        </div>
       </div>
     </div>
     <div class="footer-copyright">

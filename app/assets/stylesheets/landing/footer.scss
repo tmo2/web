@@ -2,16 +2,14 @@
 
 .landing-footer {
   background: $theme2;
+  height: 333px;
   .footer-content {
+    height: 238px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    height: 120px;
+    padding: 55px 194px 40px;
     position: relative;
     color: white;
-    p {
-      margin: 1em 0 0;
-    }
   }
   .footer-high {
     display: flex;
@@ -25,12 +23,14 @@
     }
     ul.footer-list {
       display: flex;
-      flex-basis: calc(100% - 440px);
+      flex-direction: column;
       list-style: none;
-      margin-top: 20px;
+      padding: 0;
       li {
         line-height: 16px;
         a {
+          font-size: 28px;
+          line-height: 50px;
           color: white;
           text-decoration: none;
         }
@@ -42,15 +42,24 @@
       }
     }
     .footer-line {
-      width: 160px;
       margin-top: 20px;
-      p {
-        margin: 0 0 6px;
-        line-height: 16px;
+      .line-link {
+        margin-bottom: 24px;
+        p {
+          font-size: 30px;
+          margin: 0 0 20px;
+          line-height: 28px;
+        }
+        a {
+          img {
+            width: 160px;
+          }
+        }
       }
-      a {
+      .footer-logo {
+        width: 347px;
         img {
-          width: 160px;
+          width: 100%;
         }
       }
     }
