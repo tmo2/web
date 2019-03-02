@@ -1,0 +1,5 @@
+<div class="user-show">
+  <%= @user.name %>
+  <%= link_to "日記を書く", new_post_path, class: "btn-theme header-btn"%>
+  <%= render 'posts/list', posts: @posts %>
+</div>

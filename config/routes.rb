@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   resources :comments, only: [:create, :destroy]
 
+  resources :users, only: [:show]
+
   namespace :admin do
     root to: "products#index"
     resource :products
