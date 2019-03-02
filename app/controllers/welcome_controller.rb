@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @categories = Category.all
+    @posts = Post.order("created_at DESC").limit(12)
   end
 end

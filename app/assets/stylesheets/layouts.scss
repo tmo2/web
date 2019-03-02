@@ -1,8 +1,28 @@
+@import "loader";
+
 body {
   margin: 0;
 }
 
 .container  {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  color: $dark;
+}
+
+.btn-theme {
+  color: white;
+  background: $theme2;
+  font-size: 16px;
+  padding: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  &:hover {
+    background: lighten($theme2, 6%);
+  }
+}
+
+.flex {
+  display: flex;
 }

@@ -1,21 +1,40 @@
 @import "loader";
 
-nav {
-  height: 60px;
+nav.main-header {
+  height: 120px;
   border-bottom: solid 1px black;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto 60px;
-  img {
-    height: 30px;
-    margin: 15px 0;
-    float: left;
-  }
-  .user-sign {
-    height: 60px;
-    line-height: 60px;
-    float: right;
-    a {
-      margin-right: 8px;
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    a.header-logo {
+      height: 120px;
+      img {
+        height: 60px;
+        margin: 30px 20px;
+      }
+    }
+    .user-sign {
+      display: flex;
+      .header-btn {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 34px 0;
+      }
+      .heade-link {
+        font-size: 24px;
+        line-height: 24px;
+        margin: 48px 83px 48px 0;
+      }
+      span {
+        margin: 0 30px;
+        border-left: 2px solid black;
+      }
     }
   }
 }

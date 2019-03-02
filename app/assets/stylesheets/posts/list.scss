@@ -1,0 +1,32 @@
+ul#posts.list {
+  list-style: none;
+  flex-wrap: wrap;
+  li.post-cell {
+    width: 42%;
+    margin: 24px 2% 0;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    padding: 24px 12px;
+    a {
+      text-decoration: none;
+      .post-header {
+        display: flex;
+        .post-date {
+
+        }
+        .post-user {
+          margin-left: 8px;
+        }
+      }
+      .image {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+      p {
+        text-align: center;
+        margin: 6px 0;
+      }
+    }
+  }
+}

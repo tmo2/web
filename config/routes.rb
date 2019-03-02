@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'welcome#index'
-  resources :products
-  resources :categories
+
+  resources :posts
+
+  resources :comments, only: [:create, :destroy]
 
   namespace :admin do
     root to: "products#index"
